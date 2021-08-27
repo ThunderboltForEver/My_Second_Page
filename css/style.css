@@ -290,7 +290,8 @@ header .container .search i{
 
 .services-content .srv-box i {
     margin-right: 60px;
-    color: #999;
+    color: black;
+    
     font-size: 60px;
 }
 @media (max-width:767px) {
@@ -314,3 +315,70 @@ header .container .search i{
     }
  } 
 /* End Services*/
+
+/* Start Design Section */
+
+.phone-section {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding-top: 60px;
+   margin-bottom: 60px;
+}
+
+.phone-section  .phone-pic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.phone-section .phone-pic img{
+    width: 200px;   
+    border-radius: 10px;
+}
+.design-info {
+    width: 50%;
+   min-height: 200px;
+    background-color: #18657a88;
+    color: white;
+    padding: 10px;
+}
+@media ( max-width: 767px ) {
+    .phone-section {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .design-info {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+    .phone-section  .phone-pic {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    span {
+        font-size: 14px !important;
+    }
+
+}
+.design-info h3 {
+   text-transform: uppercase;
+   font-weight: normal;
+   margin: 20px 0;
+   font-size: 24px;
+   letter-spacing: 1.2px
+}
+.design-info .icon-info {
+    margin: 10px;
+}
+.design-info .icon-info i {
+    margin:0 10px 10px 0;
+    font-size: 12px;
+}
+span {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+}
+/* End Design Section */
