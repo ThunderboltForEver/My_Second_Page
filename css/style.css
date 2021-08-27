@@ -1,0 +1,208 @@
+/* Global Rules*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }    
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }    
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }    
+}
+ul {
+    list-style: none;
+}
+/*End Global Rules*/
+
+/* Start heading */
+
+header {
+    background-color: #333;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+header .container .logo img{
+    width: 120px;
+    margin-right: 10px;
+}
+header .container nav {
+    display: flex;
+
+    
+}
+nav::after {
+    content: '';
+    width: calc( 100% - 30px);
+    height: 2px;
+    position: absolute;
+    top:75px;
+    left: 13px;
+    bottom: 0;
+    background-color: #333;
+    z-index: 15;
+
+}
+header .container .toggle-menue {
+    display: none;
+}
+@media (max-width: 767px ) {
+    header .container nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px;
+        display: none;
+        background-color: #129cc2f5;
+        width: 100%;
+    }
+    header .container nav::after {
+        display: none;
+    }
+    header .container .toggle-menue {
+        color: white;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+    header .container .toggle-menue:hover + nav {
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+    }
+
+    header .container nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    header .container nav ul li {
+        padding-bottom: 10px;
+        font-size: 35px;
+        font-weight: 600;
+        
+    }
+    header .container nav ul li:hover{
+        background-color: yellowgreen;
+    }
+  
+}
+
+header .container nav ul li {
+    display: inline-block;
+}
+
+header .container nav ul li a {
+    padding: 40px 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+header .container nav ul li a:hover {
+color: #19c8fa;
+border-bottom: 1px solid #19c8fa;
+position: relative;
+z-index: 16;
+}
+header .container .search i{
+    border-left: 1.5px solid white;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+}
+/* End heading */
+
+/* Start landscaping*/
+
+.landscaping {
+    min-height: calc( 100vh - 44px );
+    background-image: url('../images/ZHpPMF.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+.landscaping .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0 0 0 /20%);
+    position: absolute;
+    
+}
+.landscaping .landscaping-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 50%;
+    padding: 50px;
+    background-color: #060f1186;
+    min-height: 200px;
+    color: white;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.landscaping .landscaping-text .content {
+    max-width: 500px;  
+}
+.landscaping .landscaping-text .content h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 28px;
+}
+
+.landscaping .landscaping-text .content p {
+    color: #ddd;
+}
+@media ( max-width: 767px ) {
+    .landscaping .landscaping-text {
+        width: 100%;
+    }
+}
+.services-content i {
+    font-size: 100px;
+    color: black;
+}
+/* End landscaping*/
