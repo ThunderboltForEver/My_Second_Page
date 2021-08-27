@@ -332,8 +332,8 @@ header .container .search i{
     justify-content: center;
 }
 .phone-section .phone-pic img{
-    width: 50%;   
-    height: 100%;
+    width: 250px;   
+    height: auto;
     border-radius: 10px;
 }
 .design-info {
