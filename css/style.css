@@ -290,7 +290,7 @@ header .container .search i{
 
 .services-content .srv-box i {
     margin-right: 60px;
-    color: black;
+    color: #555;
     
     font-size: 60px;
 }
@@ -320,10 +320,11 @@ header .container .search i{
 
 .phone-section {
     display: flex;
-    background-color: black;
+    background-color: #eee;
     align-items: center;
     padding-top: 60px;
    margin-bottom: 60px;
+   min-height: 500px;
 }
 
 .phone-section  .phone-pic {
@@ -332,14 +333,14 @@ header .container .search i{
     justify-content: center;
 }
 .phone-section .phone-pic img{
-    width: 250px;   
+    width: 300px;   
     height: 300px;
     border-radius: 10px;
 }
 .design-info {
     width: 50%;
    min-height: 200px;
-    background-color: #18657a88;
+    background-color: #0d4352;
     color: white;
     padding: 10px;
 }
