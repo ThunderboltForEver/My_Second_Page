@@ -134,6 +134,7 @@ header .container .toggle-menue {
         display: none;
         background-color: #129cc2f5;
         width: 100%;
+        z-index: 10;
     }
     header .container nav::after {
         display: none;
@@ -152,7 +153,7 @@ header .container .toggle-menue {
 }
     header .container .toggle-menue:hover + nav {
         display: flex;
-        
+        justify-content: center;
     
     }
 
@@ -166,10 +167,15 @@ header .container .toggle-menue {
         padding-bottom: 10px;
         font-size: 35px;
         font-weight: 600;
-        
+        position: relative;
+        z-index: 11;
     }
     header .container nav ul li:hover{
         background-color: yellowgreen;
+    }
+    header .container nav ul li a {
+        position: relative;
+        z-index: 15;
     }
   
 }
@@ -464,6 +470,9 @@ span {
     letter-spacing: 1.5;
 }
 @media ( max-width:767px ) {
+    .portfolio {
+        padding: 0 10px;
+    }
     .gallery {
         display: flex;
         justify-content: center;
@@ -473,9 +482,11 @@ span {
     }
     .gallery .gallery-box img {
         max-width: 100%;
-        width:500px
+        width:500px;
+        padding-bottom: 6px;
         
     }
+    
 }
 @media ( min-width:768px ) and (max-width:1125px) {
    
